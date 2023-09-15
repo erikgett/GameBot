@@ -3,6 +3,8 @@ require: slotfilling/slotFilling.sc
 
 require: functions.js
 
+val count: Int = 0
+
 theme: /
 
     state: Start
