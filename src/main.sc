@@ -3,16 +3,16 @@ require: slotfilling/slotFilling.sc
 
 require: functions.js
 
-val count: Int = 0
+
 
 theme: /
-
+    val count: Int = 1
     state: Start
         q!: $regex</start>
         a: Молви друг и войди!
     
         state: Melon
-            q: * (melon/мелон) *
+            q: * (melon|мелон) *
             a: Перед тобой три коридора, в какой пойдешь?
             
             state: Left
