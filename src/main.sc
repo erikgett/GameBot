@@ -6,7 +6,7 @@ require: functions.js
 
 
 theme: /
-    val count: Int = 1
+    var count: Int = 1
     state: Start
         q!: $regex</start>
         a: Молви друг и войди!
