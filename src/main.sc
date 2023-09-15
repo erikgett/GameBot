@@ -30,8 +30,8 @@ theme: /
                 state: Open
                     q: * (~сломать|~открывать|~вскрывать) *
                     script:
-                        var count = count + getRandomInt(10);
-                    a: В сундуке монеты, ровно {{count}} червонца.
+                        $temp.count = $temp.count + getRandomInt(10);
+                    a: В сундуке монеты, ровно {{$temp.count}} червонца.
             
         state: NoMelon
             event: noMatch
