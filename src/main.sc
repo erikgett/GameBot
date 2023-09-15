@@ -14,7 +14,7 @@ theme: /
             
             state: Left
                 q: * * лев * *
-                a: тебя съел дракон.
+                a: тебя съел дракон. Начать с начала?
                     state: GoTostart
                         go: /Start/Melon
             
@@ -32,7 +32,9 @@ theme: /
                     script:
                         $temp.count = 0
                         $temp.count = $temp.count + getRandomInt(10)
-                    a: В сундуке монеты, ровно {{$temp.count}} червонца.
+                    a: В сундуке монеты, ровно {{$temp.count}} червонца. Начать сначала?
+                    state: GoTostart
+                        go: /Start/Melon
             
         state: NoMelon
             event: noMatch
