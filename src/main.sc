@@ -30,6 +30,7 @@ theme: /
                 state: Open
                     q: * (~сломать|~открывать|~вскрывать) *
                     script:
+                        $temp.count = 0
                         $temp.count = $temp.count + getRandomInt(10);
                     a: В сундуке монеты, ровно {{$temp.count}} червонца.
             
