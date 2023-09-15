@@ -33,9 +33,7 @@ theme: /
                         $temp.count = 0
                         $temp.count = $temp.count + getRandomInt(10)
                     a: В сундуке монеты, ровно {{$temp.count}} червонца. Начать сначала?
-                    state: GoTostart
-                        q: да
-                        go!: /Start
+                    go!: /Start
             
         state: NoMelon
             event: noMatch
