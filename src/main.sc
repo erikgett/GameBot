@@ -3,10 +3,13 @@ require: slotfilling/slotFilling.sc
 
 require: functions.js
 
+
 theme: /
     state: Start
         q!: $regex</start>
         a: Молви друг и войди!
+        script:
+            $temp.count = 0
     
         state: Melon
             q: * (melon|мелон) *
@@ -30,7 +33,6 @@ theme: /
                 state: Open
                     q: * (~сломать|~открывать|~вскрывать) *
                     script:
-                        $temp.count = 0
                         $temp.count = $temp.count + getRandomInt(10)
                     a: В сундуке монеты, ровно {{$temp.count}} червонца. Начать сначала?
                     go!: /Start
