@@ -3,8 +3,6 @@ require: slotfilling/slotFilling.sc
 
 require: functions.js
 
-var count = 0;
-
 theme: /
     state: Start
         q!: $regex</start>
@@ -31,7 +29,9 @@ theme: /
                 
                 state: Open
                     q: * (~сломать|~открывать|~вскрывать) *
-                    a: В сундуке монеты, ровно {{getRandomInt(10)}} червонца.
+                    script:
+                        var count = count + getRandomInt(10);
+                    a: В сундуке монеты, ровно {{count}} червонца.
             
         state: NoMelon
             event: noMatch
