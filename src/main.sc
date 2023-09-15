@@ -35,7 +35,7 @@ theme: /
                     a: В сундуке монеты, ровно {{$temp.count}} червонца. Начать сначала?
                     state: GoTostart
                         q: да
-                        go: /Start/Melon
+                        go!: /Start
             
         state: NoMelon
             event: noMatch
