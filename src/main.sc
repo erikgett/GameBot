@@ -3,10 +3,9 @@ require: slotfilling/slotFilling.sc
 
 require: functions.js
 
-
+var count: Int = 1
 
 theme: /
-    var count: Int = 1
     state: Start
         q!: $regex</start>
         a: Молви друг и войди!
