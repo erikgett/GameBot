@@ -25,7 +25,7 @@ theme: /
                 
                 state: Open
                     q: * (открыть~взломать~вскрыть) *
-                    a: В сундуке монеты, ровно * getRandomInt(10) * червонца.
+                    a: В сундуке монеты, ровно {{getRandomInt(10)}} червонца.
             
         state: NoMelon
             event: noMatch
