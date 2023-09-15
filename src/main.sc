@@ -3,7 +3,7 @@ require: slotfilling/slotFilling.sc
 
 require: functions.js
 
-var count: Int = 1
+var count = 1
 
 theme: /
     state: Start
