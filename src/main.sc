@@ -5,3 +5,7 @@ theme: /
     state: Start
         q!: $regex</start>
         a: Молви друг и войди!
+        
+    state: NoMatch
+        event!: noMatch
+        answer: Я не говорю по русски, я разговариваю по эльфийски
